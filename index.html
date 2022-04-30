@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price</title>
+    <link rel="stylesheet" href="style.css">    
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container">
+            <div class="info">
+                <h1>Simple Pricing!</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, labore. Sapiente suscipit saepe labore. Dignissimos iste modi deleniti non nemo?</p>
+            </div>
+            <div class="price" id="myList" >
+                <div class="price-list">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>BASIC</h4>
+                        </div>
+                        <div class="card-body selected-card" >                            
+                            <div class="price-title">
+                            <sup>&dollar;</sup>
+                            <span>
+                                12 
+                            </span>
+                                <small>/ month</small>                            
+                            </div>
+                            <hr>
+                            <div class="body-card-list">
+                                <ul>
+                                    <li>10 projects</li>
+                                    <li>10 Mb</li>
+                                    <li>10 Free space</li>
+                                </ul>
+                            </div>
+                            <button type="button" onclick="showAlert()">GET BASIC</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-list">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>PRO</h4>
+                            <!-- <span>save 15%</span> -->
+                        </div>
+                        <div class="card-body selected-card" >                            
+                            <div class="price-title">
+                            <sup>&dollar;</sup>
+                            <span>
+                                12
+                            </span>
+                                <small>/month</small>                            
+                            </div>
+                            <hr>
+                            <div class="body-card-list">
+                                <ul>
+                                    <li>10 projects</li>
+                                    <li>10 Mb</li>
+                                    <li>10 Free space</li>
+                                </ul>
+                            </div>
+                            <button type="button" onclick="showAlert()">GET PRO</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-list">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>PREMIUM</h4>
+                        </div>
+                        <div class="card-body selected-card" >                            
+                            <div class="price-title">
+                            <sup>&dollar;</sup>
+                            <span>
+                                12 
+                            </span>
+                                <small>/ month</small>                            
+                            </div>
+                            <hr>
+                            <div class="body-card-list">
+                                <ul>
+                                    <li>10 projects</li>
+                                    <li>10 Mb</li>
+                                    <li>10 Free space</li>
+                                </ul>
+                            </div>
+                            <button type="button" onclick="showAlert()">GET PREMIUM</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+       
+        </div>
+    </section>
+
+    <section id="bottom"></div>
+        <div class="container">
+            <div class="container-bottom">
+        <div class="bottom-title-asked">
+          <h2>Frequently Asked Question</h2>
+          <div class="asked-desc">
+            <div class="column-desc">
+                <p>Apa yang kami tawarkan?</p>
+              <span
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                inventore nobis ipsum dolores? Ex maiores dolores vel est
+                animi exercitationem.</span
+              >
+            </div>
+            <div class="column-desc">
+                <p>Mengapa memilih kami?</p>
+              <span>
+                Lorem,etis, doloremque minus asperiores perferendis officiis
+                culpa molestiae ipsum obcaecati dolore, id illo voluptatum
+                nihil! Magnam, aperiam dolore.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+    </section>
+    <script>
+        function showAlert() {
+            alert("Sucsess!");
+        }
+
+        const myList = document.getElementById("myList");
+        myList.addEventListener("click", function(e){            
+            const target = e.target
+            
+            if(target.matches(" div.card-body.selected-card") ){
+                target.style.backgroundColor = "#F8ECD1"
+            }
+        });
+        
+  
+        
+    </script>
+</body>
+
+</html>
